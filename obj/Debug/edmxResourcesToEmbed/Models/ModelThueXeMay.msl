@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RENT_MOTORModelStoreContainer" CdmEntityContainer="RENT_MOTOREntities">
+    <EntitySetMapping Name="bikes">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.bike">
+        <MappingFragment StoreEntitySet="bike">
+          <ScalarProperty Name="id_bike" ColumnName="id_bike" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="id_type" ColumnName="id_type" />
+          <ScalarProperty Name="IsHot" ColumnName="IsHot" />
+          <ScalarProperty Name="describe" ColumnName="describe" />
+          <ScalarProperty Name="mass" ColumnName="mass" />
+          <ScalarProperty Name="volumn" ColumnName="volumn" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="consume" ColumnName="consume" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bills">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.bill">
+        <MappingFragment StoreEntitySet="bill">
+          <ScalarProperty Name="id_bill" ColumnName="id_bill" />
+          <ScalarProperty Name="id_rent" ColumnName="id_rent" />
+          <ScalarProperty Name="money_hour" ColumnName="money_hour" />
+          <ScalarProperty Name="date_start" ColumnName="date_start" />
+          <ScalarProperty Name="date_end" ColumnName="date_end" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="blogs">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.blog">
+        <MappingFragment StoreEntitySet="blog">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="head" ColumnName="head" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="comments">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.comment">
+        <MappingFragment StoreEntitySet="comment">
+          <ScalarProperty Name="id_cmt" ColumnName="id_cmt" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contacts">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.contact">
+        <MappingFragment StoreEntitySet="contact">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="facebook_link" ColumnName="facebook_link" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employees">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.employee">
+        <MappingFragment StoreEntitySet="employee">
+          <ScalarProperty Name="id_employee" ColumnName="id_employee" />
+          <ScalarProperty Name="account" ColumnName="account" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="fulControl" ColumnName="fulControl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mails">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.mail">
+        <MappingFragment StoreEntitySet="mail">
+          <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="menus">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.menu">
+        <MappingFragment StoreEntitySet="menu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="order" ColumnName="order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rates">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.rate">
+        <MappingFragment StoreEntitySet="rate">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="job" ColumnName="job" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="image" ColumnName="image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rents">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.rent">
+        <MappingFragment StoreEntitySet="rent">
+          <ScalarProperty Name="id_rent" ColumnName="id_rent" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rentDetails">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.rentDetail">
+        <MappingFragment StoreEntitySet="rentDetails">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_rent" ColumnName="id_rent" />
+          <ScalarProperty Name="id_bike" ColumnName="id_bike" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="types">
+      <EntityTypeMapping TypeName="RENT_MOTORModel.type">
+        <MappingFragment StoreEntitySet="type">
+          <ScalarProperty Name="id_type" ColumnName="id_type" />
+          <ScalarProperty Name="type1" ColumnName="type" />
+          <ScalarProperty Name="price_hour" ColumnName="price_hour" />
+          <ScalarProperty Name="price_day" ColumnName="price_day" />
+          <ScalarProperty Name="price_month" ColumnName="price_month" />
+          <ScalarProperty Name="image" ColumnName="image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
